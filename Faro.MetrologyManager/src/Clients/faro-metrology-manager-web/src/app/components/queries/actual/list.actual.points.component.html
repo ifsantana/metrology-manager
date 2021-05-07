@@ -1,0 +1,36 @@
+<div>
+  <h2>Hi! {{currentUser.name}}!</h2>
+  <p>You're logged!!! <a [routerLink]="['/login']">+Logout</a></p>
+</div>
+<div style="margin-top: 125px; height: 80%; overflow-y: scroll;">
+  <h3>All registered actual points</h3>
+  <div>
+    <p><a [routerLink]="['/points/nominals', nominalPointId, 'actuals', 'register']">Create New</a></p>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">distance to nominal</th>
+        <th scope="col">name</th>
+        <th scope="col">x</th>
+        <th scope="col">y</th>
+        <th scope="col">z</th>
+        <!--<th scope="col">Nominal Point</th>-->
+        <th scope="col">#</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of actualPoints">
+        <td scope="row">{{item.distanceFromNominalPoint}}</td>
+        <td scope="row">{{item.name}}</td>
+        <td scope="row">{{item.x}}</td>
+        <td scope="row">{{item.y}}</td>
+        <td scope="row">{{item.z}}</td>
+        <!--<td scope="row">{{item.nominalPointId}}</td>-->
+        <td scope="row"><a href="" [routerLink]="['/points/actuals/update', item.id]">Update</a></td>
+        <td scope="row"><a href="" (click)="delete(item.id)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

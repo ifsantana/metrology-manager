@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="External\" />
+    <Folder Include="Internal\v1\Commands\RemoveNominalPoint\" />
+    <Folder Include="Internal\v1\Events\NominalPointRemoved\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Faro.MetrologyManager.Infra.CrossCutting\Faro.MetrologyManager.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>

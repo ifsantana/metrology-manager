@@ -1,0 +1,36 @@
+<div>
+  <h2>Hi! {{currentUser.name}}!</h2>
+  <p>You're logged!!! <a [routerLink]="['/login']">+Logout</a></p>
+</div>
+<div style="margin-top: 125px; height: 80%; overflow-y: scroll;">
+  <h3>All registered nominal points</h3>
+  <div>
+    <p><a [routerLink]="['/points/nominals/register']">Create New</a></p>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">average point</th>
+        <th scope="col">name</th>
+        <th scope="col">x</th>
+        <th scope="col">y</th>
+        <th scope="col">z</th>
+        <th scope="col">actual points</th>
+        <th scope="col">#</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of nominalPoints">
+        <td>[x:&nbsp;{{item.averagePointFromActualPoints.x}}, y:&nbsp;{{item.averagePointFromActualPoints.y}}, z:&nbsp;{{item.averagePointFromActualPoints.z}}]</td>
+        <td scope="row">{{item.name}}</td>
+        <td scope="row">{{item.x}}</td>
+        <td scope="row">{{item.y}}</td>
+        <td scope="row">{{item.z}}</td>
+        <td scope="row"><a href="" [routerLink]="['/points/nominals', item.id, 'actuals']">Relationed Points</a></td>
+        <td scope="row"><a href="" [routerLink]="['/points/nominals/update', item.id]">Update</a></td>
+        <td scope="row"><a href="" (click)="delete(item.id)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

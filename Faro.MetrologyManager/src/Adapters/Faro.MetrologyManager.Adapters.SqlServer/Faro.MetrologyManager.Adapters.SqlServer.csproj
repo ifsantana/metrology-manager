@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="..\..\Ports\Faro.MetrologyManager.Ports.Api\appsettings.json" Link="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Faro.MetrologyManager.Infra.CrossCutting.Messages\Faro.MetrologyManager.Infra.CrossCutting.Messages.csproj" />
+    <ProjectReference Include="..\..\Common\Faro.MetrologyManager.Infra.CrossCutting\Faro.MetrologyManager.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\..\Core\Faro.MetrologyManager.Domain\Faro.MetrologyManager.Domain.csproj" />
+    <ProjectReference Include="..\Faro.MetrologyManager.Adapters.EFCore\Faro.MetrologyManager.Adapters.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

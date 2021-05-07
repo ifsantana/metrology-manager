@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{FEA0FA3D-1601-4224-B3C4-73E79A9C2992}"
+	ProjectSection(SolutionItems) = preProject
+		docker\docker-compose.yml = docker\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{43766207-BF52-4EF7-B590-74D9BFD7A577}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tst", "tst", "{CE5A6115-089E-42F9-B4D7-F83892BD1D1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{8E424780-77FE-4E68-854C-04BC91FBC3FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6FD97B34-AEC4-41C3-8C4D-8231B20DD410}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapters", "Adapters", "{48B9A412-B3DB-4720-9609-F5868FCE80E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CEDE8725-E464-4A68-8396-C821F197D0EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Adapters.EFCore", "src\Adapters\Faro.MetrologyManager.Adapters.EFCore\Faro.MetrologyManager.Adapters.EFCore.csproj", "{043457DE-2164-407A-9C55-F17B5F5DA048}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Adapters.SqlServer", "src\Adapters\Faro.MetrologyManager.Adapters.SqlServer\Faro.MetrologyManager.Adapters.SqlServer.csproj", "{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Infra.CrossCutting", "src\Common\Faro.MetrologyManager.Infra.CrossCutting\Faro.MetrologyManager.Infra.CrossCutting.csproj", "{8EF84DFF-784F-4766-8F2A-8370DC025BDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Infra.IoC", "src\Common\Faro.MetrologyManager.Infra.IoC\Faro.MetrologyManager.Infra.IoC.csproj", "{B79225C6-745E-416A-8267-05D4081BAB2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{03D9893C-8E60-4768-AC03-ABFD67F0C87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ports", "Ports", "{08E28F07-829C-428C-A60F-B15B2FAA6CD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6D2B18FB-B4B1-4876-97EC-DEF07E3B4EAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Application.Tests", "tst\Core\Faro.MetrologyManager.Application.Tests\Faro.MetrologyManager.Application.Tests.csproj", "{ECBD8259-7270-46DB-87A3-5C8D2C18E88E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Domain.Tests", "tst\Core\Faro.MetrologyManager.Domain.Tests\Faro.MetrologyManager.Domain.Tests.csproj", "{A295D6B1-7511-4802-AAAF-8D81FD6B488F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{208C3D9B-CD9D-49FD-A27F-2801735BF8B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Ports.Api", "src\Ports\Faro.MetrologyManager.Ports.Api\Faro.MetrologyManager.Ports.Api.csproj", "{5DD3DE8F-E92D-4A05-9276-CC84A80F0166}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Infra.CrossCutting.Tests", "tst\Common\Faro.MetrologyManager.Infra.CrossCutting.Tests\Faro.MetrologyManager.Infra.CrossCutting.Tests.csproj", "{A798D34A-D12C-4EDB-A254-5690CECBC1D2}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "faro-metrology-manager-web", "src\Clients\faro-metrology-manager-web\", "{67349332-02C3-4A24-B81E-AA820C8A97D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_25313"
+		Debug.AspNetCompiler.PhysicalPath = "src\Clients\faro-metrology-manager-web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25313\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_25313"
+		Release.AspNetCompiler.PhysicalPath = "src\Clients\faro-metrology-manager-web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_25313\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "25313"
+		SlnRelativePath = "src\Clients\faro-metrology-manager-web\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Application", "src\Core\Faro.MetrologyManager.Application\Faro.MetrologyManager.Application.csproj", "{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Domain", "src\Core\Faro.MetrologyManager.Domain\Faro.MetrologyManager.Domain.csproj", "{42A1DF84-EC1B-4249-9424-97FB16649314}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{C7526B29-81DA-4714-97C6-394F0A31CB68}"
+	ProjectSection(SolutionItems) = preProject
+		docker\db\docker-compose.yml = docker\db\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Faro.MetrologyManager.Infra.CrossCutting.Messages", "src\Common\Faro.MetrologyManager.Infra.CrossCutting.Messages\Faro.MetrologyManager.Infra.CrossCutting.Messages.csproj", "{844D8EC0-BA02-4252-B436-D68F0D4320F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97735AD0-1C32-4BA1-A6EC-02CA36BD1D80}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faro.MetrologyManager.Tests", "Faro.MetrologyManager.Tests\Faro.MetrologyManager.Tests.csproj", "{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{043457DE-2164-407A-9C55-F17B5F5DA048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043457DE-2164-407A-9C55-F17B5F5DA048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043457DE-2164-407A-9C55-F17B5F5DA048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043457DE-2164-407A-9C55-F17B5F5DA048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF84DFF-784F-4766-8F2A-8370DC025BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF84DFF-784F-4766-8F2A-8370DC025BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF84DFF-784F-4766-8F2A-8370DC025BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF84DFF-784F-4766-8F2A-8370DC025BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79225C6-745E-416A-8267-05D4081BAB2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79225C6-745E-416A-8267-05D4081BAB2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79225C6-745E-416A-8267-05D4081BAB2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79225C6-745E-416A-8267-05D4081BAB2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECBD8259-7270-46DB-87A3-5C8D2C18E88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBD8259-7270-46DB-87A3-5C8D2C18E88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBD8259-7270-46DB-87A3-5C8D2C18E88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBD8259-7270-46DB-87A3-5C8D2C18E88E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A295D6B1-7511-4802-AAAF-8D81FD6B488F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A295D6B1-7511-4802-AAAF-8D81FD6B488F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A295D6B1-7511-4802-AAAF-8D81FD6B488F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A295D6B1-7511-4802-AAAF-8D81FD6B488F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD3DE8F-E92D-4A05-9276-CC84A80F0166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD3DE8F-E92D-4A05-9276-CC84A80F0166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD3DE8F-E92D-4A05-9276-CC84A80F0166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD3DE8F-E92D-4A05-9276-CC84A80F0166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A798D34A-D12C-4EDB-A254-5690CECBC1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A798D34A-D12C-4EDB-A254-5690CECBC1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A798D34A-D12C-4EDB-A254-5690CECBC1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A798D34A-D12C-4EDB-A254-5690CECBC1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67349332-02C3-4A24-B81E-AA820C8A97D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67349332-02C3-4A24-B81E-AA820C8A97D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67349332-02C3-4A24-B81E-AA820C8A97D4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{67349332-02C3-4A24-B81E-AA820C8A97D4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A1DF84-EC1B-4249-9424-97FB16649314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A1DF84-EC1B-4249-9424-97FB16649314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A1DF84-EC1B-4249-9424-97FB16649314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A1DF84-EC1B-4249-9424-97FB16649314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844D8EC0-BA02-4252-B436-D68F0D4320F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844D8EC0-BA02-4252-B436-D68F0D4320F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844D8EC0-BA02-4252-B436-D68F0D4320F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844D8EC0-BA02-4252-B436-D68F0D4320F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E424780-77FE-4E68-854C-04BC91FBC3FA} = {43766207-BF52-4EF7-B590-74D9BFD7A577}
+		{6FD97B34-AEC4-41C3-8C4D-8231B20DD410} = {43766207-BF52-4EF7-B590-74D9BFD7A577}
+		{48B9A412-B3DB-4720-9609-F5868FCE80E9} = {43766207-BF52-4EF7-B590-74D9BFD7A577}
+		{CEDE8725-E464-4A68-8396-C821F197D0EA} = {43766207-BF52-4EF7-B590-74D9BFD7A577}
+		{043457DE-2164-407A-9C55-F17B5F5DA048} = {48B9A412-B3DB-4720-9609-F5868FCE80E9}
+		{C8B39BB7-0BB4-4DB9-9E49-B842DFA119B0} = {48B9A412-B3DB-4720-9609-F5868FCE80E9}
+		{8EF84DFF-784F-4766-8F2A-8370DC025BDF} = {6FD97B34-AEC4-41C3-8C4D-8231B20DD410}
+		{B79225C6-745E-416A-8267-05D4081BAB2A} = {6FD97B34-AEC4-41C3-8C4D-8231B20DD410}
+		{03D9893C-8E60-4768-AC03-ABFD67F0C87D} = {CE5A6115-089E-42F9-B4D7-F83892BD1D1D}
+		{08E28F07-829C-428C-A60F-B15B2FAA6CD1} = {CE5A6115-089E-42F9-B4D7-F83892BD1D1D}
+		{6D2B18FB-B4B1-4876-97EC-DEF07E3B4EAA} = {CE5A6115-089E-42F9-B4D7-F83892BD1D1D}
+		{ECBD8259-7270-46DB-87A3-5C8D2C18E88E} = {6D2B18FB-B4B1-4876-97EC-DEF07E3B4EAA}
+		{A295D6B1-7511-4802-AAAF-8D81FD6B488F} = {6D2B18FB-B4B1-4876-97EC-DEF07E3B4EAA}
+		{208C3D9B-CD9D-49FD-A27F-2801735BF8B4} = {43766207-BF52-4EF7-B590-74D9BFD7A577}
+		{5DD3DE8F-E92D-4A05-9276-CC84A80F0166} = {8E424780-77FE-4E68-854C-04BC91FBC3FA}
+		{A798D34A-D12C-4EDB-A254-5690CECBC1D2} = {03D9893C-8E60-4768-AC03-ABFD67F0C87D}
+		{67349332-02C3-4A24-B81E-AA820C8A97D4} = {208C3D9B-CD9D-49FD-A27F-2801735BF8B4}
+		{F9B92719-AF9D-4E2F-9F76-207DD4E8C5B1} = {CEDE8725-E464-4A68-8396-C821F197D0EA}
+		{42A1DF84-EC1B-4249-9424-97FB16649314} = {CEDE8725-E464-4A68-8396-C821F197D0EA}
+		{C7526B29-81DA-4714-97C6-394F0A31CB68} = {FEA0FA3D-1601-4224-B3C4-73E79A9C2992}
+		{844D8EC0-BA02-4252-B436-D68F0D4320F3} = {6FD97B34-AEC4-41C3-8C4D-8231B20DD410}
+		{59B9A1B6-6212-4B6B-A4CA-1E6A9B92FE7D} = {CE5A6115-089E-42F9-B4D7-F83892BD1D1D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC2DC17C-B190-4BFD-85CC-EC0F01D59B14}
+	EndGlobalSection
+EndGlobal

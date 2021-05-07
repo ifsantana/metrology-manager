@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Faro.MetrologyManager.Infra.CrossCutting.Messages\Faro.MetrologyManager.Infra.CrossCutting.Messages.csproj" />
+    <ProjectReference Include="..\..\Common\Faro.MetrologyManager.Infra.CrossCutting\Faro.MetrologyManager.Infra.CrossCutting.csproj" />
+    <ProjectReference Include="..\Faro.MetrologyManager.Domain\Faro.MetrologyManager.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
